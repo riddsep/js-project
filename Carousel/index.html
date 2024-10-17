@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carousel</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="carousel-wrapper">
+      <span id="prevBtn"><img src="images/left.svg" alt="" class="btn" /></span>
+      <div class="carousel">
+        <div>
+          <span><img src="images/1.jpg" alt="" class="item" /></span>
+          <span><img src="images/2.jpg" alt="" class="item" /></span>
+          <span><img src="images/3.jpg" alt="" class="item" /></span>
+          <span><img src="images/4.jpg" alt="" class="item" /></span>
+          <span><img src="images/5.jpg" alt="" class="item" /></span>
+          <span><img src="images/1.jpg" alt="" class="item" /></span>
+          <span><img src="images/2.jpg" alt="" class="item" /></span>
+          <span><img src="images/3.jpg" alt="" class="item" /></span>
+          <span><img src="images/4.jpg" alt="" class="item" /></span>
+          <span><img src="images/5.jpg" alt="" class="item" /></span>
+          <span><img src="images/1.jpg" alt="" class="item" /></span>
+          <span><img src="images/2.jpg" alt="" class="item" /></span>
+          <span><img src="images/3.jpg" alt="" class="item" /></span>
+          <span><img src="images/4.jpg" alt="" class="item" /></span>
+          <span><img src="images/5.jpg" alt="" class="item" /></span>
+          <span><img src="images/1.jpg" alt="" class="item" /></span>
+          <span><img src="images/2.jpg" alt="" class="item" /></span>
+          <span><img src="images/3.jpg" alt="" class="item" /></span>
+          <span><img src="images/4.jpg" alt="" class="item" /></span>
+          <span><img src="images/5.jpg" alt="" class="item" /></span>
+        </div>
+      </div>
+      <span id="nextBtn"
+        ><img src="images/right.svg" alt="" class="btn"
+      /></span>
+    </div>
+    <script>
+      const scrollContainer = document.querySelector(".carousel");
+      const prevBtn = document.querySelector("#prevBtn");
+      const nextBtn = document.querySelector("#nextBtn");
+
+      nextBtn.addEventListener("click", () => {
+        scrollContainer.scrollLeft += 600;
+      });
+      prevBtn.addEventListener("click", () => {
+        scrollContainer.scrollLeft -= 600;
+      });
+    </script>
+  </body>
+</html>
